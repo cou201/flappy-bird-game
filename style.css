@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.fondo-atras-juego-flappy-birds {
+	height: 70vh;
+	width: 100vw;
+	background: url("/images/san-valentin-juego-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.cupido-juego-prueba-david {
+	height: 100px;
+	width: 130px;
+	position: fixed;
+	top: 10vh;
+	left: 30vw;
+	z-index: 100;
+}
+.pipe_sprite {
+	position: fixed;
+	top: 10vh;
+	left: 100vw;
+	height: 21vh;
+	width: 6vw;
+	background:radial-gradient(rgb(216, 100, 82) 50%, rgb(248, 232, 160));
+	border: 5px solid black;
+	margin-top: -238px;
+}
+.mensaje-comienzo-juego-prueba {
+	position: absolute;
+	z-index: 10;
+	color: black;
+	top: 30%;
+	left: 50%;
+	font-size: 4em;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.messageStyle{
+	background: white;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 5%;
+}
+.score-juego-prueba-david {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	color: white;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.score_val {
+	color: #2c2c22;
+	font-weight: bold;
+}
+@media only screen and (max-width: 1080px) {
+    .mensaje-comienzo-juego-prueba{
+		font-size: 32px;
+		top: 34%;
+		white-space: nowrap;
+	}
+	.score-juego-prueba-david{
+		font-size: 8vh;
+	}
+	.cupido-juego-prueba-david{
+		width: 120px;
+		height: 90px;
+	}
+	.pipe_sprite{
+		width: 14vw;
+	}
+}
